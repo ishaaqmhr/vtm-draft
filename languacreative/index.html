@@ -373,6 +373,25 @@ figcaption b{color:var(--ink)}
 .keyrow span{display:flex;align-items:center;gap:6px}
 .keyrow i{display:inline-block;padding:3px 6px;border-radius:999px;background:var(--coral);color:#fff;font:800 10px/1 var(--font);font-style:normal}
 .keyrow i.solo{background:#3D4752}
+/* ---------- Intro video (fills the first screen so chapter 01 starts below the fold) ---------- */
+.intro .stop{min-height:calc(100svh - var(--bar));gap:20px;align-items:center}
+.intro .head{width:100%;max-width:var(--vw)}
+.intro{--vw:min(100%, calc((100svh - var(--bar) - 230px) * 1.9394))}
+.player{position:relative;width:var(--vw);aspect-ratio:1920/990;border-radius:18px;overflow:hidden;background:#0E1114;border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.player video{display:block;width:100%;height:100%;object-fit:cover;background:#0E1114}
+.player .play{position:absolute;inset:0;display:grid;place-items:center;border:0;cursor:pointer;background:linear-gradient(180deg,rgba(14,17,20,0) 55%,rgba(14,17,20,.55));transition:opacity .35s var(--ease)}
+.player .play span{display:flex;align-items:center;gap:12px;padding:14px 22px 14px 16px;border-radius:999px;background:var(--ice);color:#181C20;font:800 15px/1 var(--font);box-shadow:0 12px 40px rgba(0,0,0,.35);transition:transform .35s var(--ease)}
+.player .play:hover span{transform:scale(1.04)}
+.player .play i{width:34px;height:34px;border-radius:50%;background:var(--coral);display:grid;place-items:center}
+.player .play svg{width:13px;height:13px;margin-left:2px;color:#fff}
+.player .play small{font-weight:700;color:#6E7987;font-variant-numeric:tabular-nums}
+.player.on .play{opacity:0;pointer-events:none}
+.scrollcue{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.scrollcue svg{width:12px;height:12px;animation:flo 2.4s ease-in-out infinite}
+
+.intro + .chapter .stop:first-child{border-top:1px solid var(--line)}
+@media (max-width:700px){.intro{--vw:100%}.player{border-radius:12px}}
+
 .end{width:var(--wrap);margin:0 auto;padding:28px 0 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--ink3);font-size:12.5px;font-weight:600}
 
 /* ---------- Keyframes (calm loops) ---------- */
@@ -432,6 +451,24 @@ figcaption b{color:var(--ink)}
 </header>
 
 <main>
+
+<!-- ===================== INTRO VIDEO ===================== -->
+<section class="intro" id="intro">
+  <div class="stop">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow"><b>00</b> Start here</div>
+        <h2>A quick video first</h2>
+      </div>
+      <div class="meta"><span class="chip">1:51</span><span class="chip">From Ishaaq</span></div>
+    </div>
+    <div class="player rv" id="player" style="--i:1">
+      <video id="vid" src="media/langua-audit.mp4" poster="media/langua-audit-poster.jpg" preload="metadata" playsinline></video>
+      <button class="play" id="playbtn" aria-label="Play the video"><span><i><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2.5 1.2v9.6L10.5 6z"/></svg></i>Play video <small>1:51</small></span></button>
+    </div>
+    <div class="scrollcue rv" style="--i:2">Then scroll for the walkthrough <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4.5l4 4 4-4"/></svg></div>
+  </div>
+</section>
 
 <!-- ===================== 01 CURRENT LOOK ===================== -->
 <section class="chapter" id="ch1" data-ch="1">
@@ -909,7 +946,8 @@ figcaption b{color:var(--ink)}
   }
   function syncTabs(){
     var s = stops[currentIndex()];
-    var ch = s.closest('.chapter').getAttribute('data-ch');
+    var chap = s.closest('.chapter');
+    var ch = chap ? chap.getAttribute('data-ch') : 'none';
     tabs.forEach(function(t){ t.classList.toggle('on', t.getAttribute('data-go') === 'ch' + ch); });
   }
   window.addEventListener('scroll', syncTabs, {passive: true});
@@ -924,10 +962,21 @@ figcaption b{color:var(--ink)}
   }
   segBtns.forEach(function(b){ b.addEventListener('click', function(){ setMode(b.getAttribute('data-mode')); }); });
 
+  // Intro video: native controls appear once playing; pause when scrolled away
+  var vid = document.getElementById('vid'), player = document.getElementById('player');
+  function startVid(){ player.classList.add('on'); vid.controls = true; vid.play(); }
+  document.getElementById('playbtn').addEventListener('click', startVid);
+  vid.addEventListener('play', function(){ player.classList.add('on'); vid.controls = true; });
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(en){ en.forEach(function(e){ if (!e.isIntersecting && !vid.paused) vid.pause(); }); }, {threshold: 0.25}).observe(player);
+  }
+
   document.addEventListener('keydown', function(e){
     if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target === vid) return;  // let the player handle its own seek keys
     var k = e.key;
-    if (k >= '1' && k <= '4'){ e.preventDefault(); go(document.getElementById('ch' + k)); }
+    if (k === '0'){ e.preventDefault(); go(document.getElementById('intro')); }
+    else if (k >= '1' && k <= '4'){ e.preventDefault(); go(document.getElementById('ch' + k)); }
     else if (k === 'ArrowRight'){ e.preventDefault(); var i = currentIndex(); if (i < stops.length - 1) go(stops[i + 1]); }
     else if (k === 'ArrowLeft'){ e.preventDefault(); var j = currentIndex(); if (j > 0) go(stops[j - 1]); }
     else if (k === 'c' || k === 'C'){ setMode(stage.classList.contains('compare') ? 'solo' : 'compare'); }
