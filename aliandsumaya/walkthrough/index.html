@@ -670,23 +670,6 @@ footer p{max-width:70ch}
   });
 })();
 </script>
-<script>
-// First-party view beacon (fires only on visualtruthmedia.com; local previews are ignored)
-(function () {
-  if (location.hostname !== 'visualtruthmedia.com' && location.hostname !== 'www.visualtruthmedia.com') return;
-  var ENDPOINT = 'https://vtm-track.ishaaqmhr.workers.dev/e';
-  var SLUG = 'aliandsumaya-walkthrough';
-  var SID = Math.random().toString(36).slice(2, 12);
-  var t0 = Date.now();
-  function send(ev) {
-    var body = JSON.stringify({ slug: SLUG, sid: SID, event: ev, sec: Math.round((Date.now() - t0) / 1000), vidSec: 0 });
-    if (navigator.sendBeacon) { navigator.sendBeacon(ENDPOINT, new Blob([body], { type: 'text/plain' })); }
-    else { fetch(ENDPOINT, { method: 'POST', body: body, keepalive: true }).catch(function () {}); }
-  }
-  send('open');
-  document.addEventListener('visibilitychange', function () { send(document.hidden ? 'tab_hide' : 'tab_show'); });
-  window.addEventListener('pagehide', function () { send('leave'); });
-})();
-</script>
+<script src="/vtm-track.js" data-slug="aliandsumaya-walkthrough" defer></script>
 </body>
 </html>
