@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ali and Sumaya School: visual walkthrough</title>
+<meta property="og:title" content="Ali and Sumaya School: visual walkthrough">
+<meta property="og:description" content="Ads, website, App Store page and Ramadan timing, checked 28 November 2026.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..700,0..100&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF6EE; --paper2:#F2ECDF; --ink:#0F172A; --ink2:#334155; --ink3:#586579;
+  --blue:#2563EB; --sun:#FFD235; --rule:rgba(15,23,42,.12);
+  --night:#0B1033; --night2:#161E4A; --amber:#F6C453; --cream:#FAF5EB;
+  --nink2:#C9CDE6; --nink3:#A9AFD0; --nrule:rgba(250,245,235,.16);
+  --emerald:#0F766E; --ease:cubic-bezier(.22,1,.36,1);
+  --g:16px; --bar:56px;
+}
+@media(min-width:720px){:root{--g:32px}}
+@media(min-width:1100px){:root{--g:48px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.3;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .28  0 0 0 .18 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+ol,ul{list-style:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.night :focus-visible,.bar.is-night :focus-visible{outline-color:var(--amber)}
+.page{position:relative;z-index:1;overflow-x:clip}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:20;height:var(--bar);background:rgba(250,246,238,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);color:var(--ink);transition:background-color .6s var(--ease),color .6s var(--ease),border-color .6s var(--ease)}
+.bar.is-night{background:rgba(11,16,51,.92);color:var(--cream);border-color:var(--nrule)}
+.bar-in{max-width:1240px;margin:0 auto;padding:0 var(--g);height:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;min-width:0;flex:0 0 auto}
+.brand svg{width:18px;height:16px;flex:none}
+.brand b{font-weight:700;font-size:15px;white-space:nowrap}
+.brand i{font-style:normal;font-weight:500;font-size:15px;color:var(--ink3);padding-left:10px;border-left:1px solid currentColor;margin-left:2px;display:none;transition:color .6s var(--ease)}
+.bar.is-night .brand i{color:var(--nink3)}
+@media(min-width:560px){.brand i{display:inline}}
+.nav{display:none;gap:0}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;font-weight:600;font-size:14px;color:var(--ink2);text-decoration:none;position:relative;font-variant-numeric:tabular-nums;transition:color .6s var(--ease)}
+.bar.is-night .nav a{color:var(--nink2)}
+.nav a::after{content:"";position:absolute;left:10px;right:10px;bottom:11px;height:7px;background:var(--sun);opacity:0;z-index:-1}
+.bar.is-night .nav a::after{background:var(--amber);opacity:0}
+.nav a[aria-current="true"]{color:var(--ink)}
+.bar.is-night .nav a[aria-current="true"]{color:var(--cream)}
+.nav a[aria-current="true"]::after{opacity:.9}
+.curr{font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;text-align:right}
+.curr b{font-weight:700}
+@media(min-width:760px){.nav{display:flex}.curr{display:none}}
+
+/* layout */
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--g)}
+.sec{display:flex;flex-direction:column}
+.margin{display:contents}
+.m-info{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin-bottom:18px}
+.m-num{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100,"opsz" 144;font-weight:600;font-size:28px;line-height:1;color:var(--blue);font-variant-numeric:lining-nums}
+.m-name{font-weight:700;font-size:15px}
+.m-date{font-weight:400;font-size:13px;color:var(--ink3);flex-basis:100%}
+.m-src{order:3;margin-top:40px;font-size:13px;color:var(--ink2);font-weight:500}
+.m-src span{color:var(--ink3);font-weight:500;margin-right:6px}
+.m-src ul{display:flex;flex-wrap:wrap;gap:2px 16px;margin-top:2px}
+.m-src a{text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:6px 0}
+.main{min-width:0}
+@media(min-width:1000px){
+  .sec{display:grid;grid-template-columns:200px minmax(0,1fr);gap:0 48px;align-items:start}
+  .margin{display:block;position:sticky;top:84px}
+  .m-info{display:block;margin-bottom:0}
+  .m-num{display:block;font-size:44px;margin-bottom:10px}
+  .m-name{display:block}
+  .m-date{display:block;margin-top:4px}
+  .m-src{margin-top:18px}
+  .m-src ul{display:block}
+  .m-src li{margin-top:2px}
+  .m-src a{padding:3px 0}
+}
+section{scroll-margin-top:var(--bar)}
+.pad{padding-top:72px;padding-bottom:72px}
+@media(min-width:1000px){.pad{padding-top:120px;padding-bottom:120px}}
+.day section+section{border-top:1px solid var(--rule)}
+.hero{padding:64px 0 72px;scroll-margin-top:var(--bar)}
+@media(min-width:1000px){.hero{padding:104px 0 96px}}
+
+/* type */
+h1,h2{font-weight:800;display:flex;flex-direction:column}
+h1{font-size:clamp(40px,7.4vw,88px);line-height:1.02;letter-spacing:-.035em;max-width:24ch}
+h2{font-size:clamp(30px,4.6vw,52px);line-height:1.06;letter-spacing:-.028em;max-width:22ch;margin-bottom:48px}
+.l1{color:var(--ink)}.l2{color:var(--blue)}
+.night .l1{color:var(--cream)}.night .l2{color:var(--amber)}
+h3{font-weight:700;font-size:17px;line-height:1.3}
+.sub{margin-top:72px}
+.sub>h3.t{font-size:22px;margin-bottom:28px;max-width:34ch}
+.lede{font-size:20px;line-height:1.5;color:var(--ink2);max-width:46ch;margin-top:28px}
+mark{color:inherit;background:linear-gradient(transparent 55%,var(--sun) 55%,var(--sun) 90%,transparent 90%) no-repeat;background-size:100% 100%;padding:0 1px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.js mark{background-size:0% 100%;transition:background-size .7s var(--ease) .25s}
+.js .seen mark{background-size:100% 100%}
+.night mark{background:linear-gradient(transparent 80%,var(--amber) 80%,var(--amber) 93%,transparent 93%) no-repeat;background-size:100% 100%;color:var(--cream);padding-bottom:2px}
+.js .night mark{background-size:0% 100%}
+.js .night .seen mark{background-size:100% 100%}
+.night mark{color:var(--cream)}
+
+/* contents */
+.toc{margin-top:56px;border-top:1px solid var(--rule)}
+@media(min-width:760px){.toc{columns:2;column-gap:48px}}
+.toc li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.toc a{display:flex;align-items:baseline;gap:16px;padding:14px 0;text-decoration:none;min-height:56px}
+.toc a:hover .tn{color:var(--ink)}
+.tn{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100,"opsz" 144;font-weight:600;font-size:22px;color:var(--blue);font-variant-numeric:lining-nums tabular-nums;min-width:30px}
+.tt{font-weight:600;font-size:18px;color:var(--ink)}
+
+/* numbers */
+.big{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100,"opsz" 144;font-weight:600;font-size:clamp(52px,9vw,112px);line-height:.92;letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums;color:var(--ink)}
+.night .big{color:var(--cream)}
+.blabel{font-weight:500;font-size:15px;color:var(--ink2);max-width:26ch;margin-top:12px;line-height:1.45}
+.night .blabel{color:var(--nink2)}
+.spread{display:grid;grid-template-columns:1fr 1fr;gap:40px 24px}
+.spread .big{font-size:clamp(40px,11vw,52px)}
+@media(min-width:1000px){.spread{grid-template-columns:repeat(4,1fr);gap:32px}.spread .big{font-size:52px}}
+.three{display:grid;gap:36px}
+.three .big{font-size:clamp(52px,14vw,64px)}
+@media(min-width:760px){.three{grid-template-columns:repeat(3,1fr);gap:24px}.three .big{font-size:clamp(44px,5vw,60px)}}
+.facts{border-top:1px solid var(--rule);margin-top:40px;padding-top:16px;font-weight:500;font-size:15px;color:var(--ink2);max-width:80ch;line-height:1.6}
+
+/* standing */
+.standing{margin-top:72px}
+.standing ul{margin-top:16px;display:grid;gap:10px 40px}
+@media(min-width:760px){.standing ul{grid-template-columns:1fr 1fr}}
+.standing li{display:flex;gap:10px;align-items:baseline;font-size:16px;color:var(--ink2)}
+.standing svg{width:10px;height:10px;flex:none;color:var(--emerald)}
+
+/* figures, markers, notes */
+.fig{position:relative}
+.cap{font-size:13px;color:var(--ink3);margin-top:10px;line-height:1.45}
+.night .cap{color:var(--nink3)}
+.mk{position:absolute;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font:700 12px/26px Inter,sans-serif;text-align:center;transform:translate(-50%,-50%);font-variant-numeric:tabular-nums;z-index:2}
+.mk.corner{transform:none;top:-8px;left:-8px}
+.night .mk{background:var(--amber);color:var(--night)}
+.notes{display:grid;gap:12px}
+.notes li{display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:16px;color:var(--ink2);line-height:1.5}
+.notes b{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.night .notes li{color:var(--nink2)}.night .notes b{color:var(--cream)}
+.ig{display:grid;gap:28px;margin-top:72px}
+.ig .fig{max-width:620px}
+.ig img{border-radius:10px;width:100%;height:auto}
+@media(min-width:1000px){.ig{grid-template-columns:minmax(0,620px) minmax(0,1fr);gap:40px;align-items:start}}
+.notes.two{gap:12px 40px}
+@media(min-width:760px){.notes.two{grid-template-columns:1fr 1fr}}
+
+/* ads */
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1*var(--g));padding:12px var(--g) 8px;scroll-padding:0 var(--g);-webkit-overflow-scrolling:touch}
+.strip figure{flex:0 0 70vw;max-width:300px;scroll-snap-align:start;position:relative}
+.strip img{width:100%;height:auto}
+@media(min-width:1000px){.strip{margin:0;padding:12px 0 8px;overflow:visible;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.strip figure{flex:none;max-width:none}}
+.adnotes{margin-top:28px}
+.vid{display:grid;gap:36px}
+@media(min-width:760px){.vid{grid-template-columns:auto minmax(0,1fr);gap:48px;align-items:start}}
+.phone{aspect-ratio:390/844;border:7px solid var(--ink);border-radius:36px;overflow:hidden;background:#fff;width:100%}
+.phone img,.phone video{width:100%;height:100%;object-fit:cover;object-position:top}
+.night .phone{border-color:#2B3570}
+.phone.v{aspect-ratio:9/16}
+.phone.g{aspect-ratio:390/700}
+.pw{position:relative;width:min(72vw,280px)}
+.pcap{font-size:13px;color:var(--ink3);margin-top:10px;line-height:1.45}
+.night .pcap{color:var(--nink3)}
+blockquote{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100,"opsz" 36;font-weight:500;font-size:24px;line-height:1.35;max-width:30ch;border-left:3px solid var(--sun);padding-left:20px;color:var(--ink)}
+.plain{display:grid;gap:12px;font-size:16px;color:var(--ink2);margin-top:32px;max-width:52ch}
+.plain li{padding-left:0}
+.plain li+li{border-top:1px solid var(--rule);padding-top:12px}
+
+/* doors */
+.doors{display:grid;gap:56px;margin-top:8px}
+.door h3{font-size:20px}
+.door .u{font-weight:500;font-size:14px;color:var(--ink3);margin:4px 0 20px;overflow-wrap:anywhere}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pair .phone{width:100%}
+.pair .pw{width:100%}
+@media(max-width:999px){.pair{max-width:420px}.pair .pw{width:100%}}
+@media(min-width:1000px){.doors{grid-template-columns:5fr 3fr 2fr;gap:32px;align-items:start}}
+.door.c .pw{width:min(72vw,280px)}
+@media(min-width:1000px){.door.c .pw{width:100%}}
+.bf{border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:#fff}
+.bf .u2{height:30px;background:var(--paper2);display:flex;align-items:center;padding:0 12px;font-weight:500;font-size:12px;color:var(--ink3);border-bottom:1px solid var(--rule);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bf img{width:100%;height:auto}
+.night .bf{border-color:var(--nrule)}
+.night .bf .u2{background:var(--night2);color:var(--nink3);border-color:var(--nrule)}
+.ram{display:grid;gap:28px}
+@media(min-width:760px){.ram{grid-template-columns:auto minmax(0,1fr);gap:48px;align-items:start}}
+
+/* gallery */
+.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1*var(--g));padding:14px var(--g) 8px;scroll-padding:0 var(--g);-webkit-overflow-scrolling:touch;--gh:300px}
+@media(min-width:1000px){.gal{--gh:380px;margin:0;padding-left:0;padding-right:0;scroll-padding:0}}
+.gal figure{flex:none;scroll-snap-align:start}
+.gal .iw{position:relative;height:var(--gh);display:inline-block;vertical-align:top}
+.gal img{height:var(--gh);width:auto;border-radius:10px}
+.gal figcaption{font-weight:600;font-size:13px;color:var(--ink3);margin-top:8px}
+.hint{font-size:13px;color:var(--ink3);margin-top:4px}
+.strip1{margin-top:56px}
+.strip1 img{width:100%;height:auto;border-radius:6px}
+.gp{display:grid;gap:28px}
+@media(min-width:760px){.gp{grid-template-columns:auto minmax(0,1fr);gap:48px;align-items:start}}
+.gp ul{display:grid;gap:12px;font-size:16px;color:var(--ink2)}
+.gp li+li{border-top:1px solid var(--rule);padding-top:12px}
+
+/* night */
+.night{background:var(--night);color:var(--cream);position:relative;z-index:2}
+.night section+section{border-top:1px solid var(--nrule)}
+.night .m-num{color:var(--amber)}
+.night .m-date{color:var(--nink3)}
+.night .m-src{color:var(--nink2)}
+.night .m-src span{color:var(--nink3)}
+.night .facts{border-color:var(--nrule);color:var(--nink2)}
+.open{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 45%;height:auto}
+.n72{margin-top:56px}
+.tl{display:grid;gap:0;margin-top:48px}
+.tl li{position:relative;padding:0 0 32px 32px;font-weight:500;font-size:15px;color:var(--nink2);line-height:1.4}
+.tl li::before{content:"";position:absolute;left:4px;top:12px;bottom:-4px;width:1px;background:var(--nrule)}
+.tl li:last-child::before{display:none}
+.tl li::after{content:"";position:absolute;left:0;top:5px;width:9px;height:9px;border-radius:50%;border:1px solid var(--cream);background:var(--night)}
+.tl li.on{color:var(--cream)}
+.tl li.on::after{background:var(--amber);border-color:var(--amber);width:11px;height:11px;left:-1px;top:4px}
+.tl li.rng::before{width:4px;left:2px;background:var(--amber)}
+.tlnote{margin-top:16px;font-size:16px;color:var(--nink2);max-width:62ch}
+@media(min-width:760px){
+  .tl{grid-template-columns:repeat(4,1fr)}
+  .tl li{padding:28px 16px 0 0}
+  .tl li::before{left:0;right:0;top:5px;bottom:auto;width:auto;height:1px;background:var(--nrule)}
+  .tl li.rng::before{width:auto;height:4px;left:0;top:3px}
+  .tl li::after{left:0;top:1px}
+  .tl li.on::after{left:-1px;top:0}
+}
+.nv{margin-top:72px}
+.cmp{display:grid;gap:56px}
+@media(min-width:1000px){.cmp{grid-template-columns:1fr 1fr;gap:48px;align-items:start}}
+.cmp h3{font-size:22px;color:var(--cream);margin-bottom:16px}
+.cmp ul{display:grid;gap:10px;margin-top:20px;font-size:16px;color:var(--nink2)}
+.cmp li+li{border-top:1px solid var(--nrule);padding-top:10px}
+.six{--gh:240px}
+@media(min-width:1000px){.six{--gh:250px;margin:0;padding-left:0;padding-right:0}}
+.six figure{width:max-content;min-width:180px;max-width:230px}
+.six figure.nm{max-width:none}
+.six figcaption{font-weight:600;font-size:14px;color:var(--cream);margin-top:12px;line-height:1.35}
+.six figcaption i{font-style:normal;color:var(--nink2);font-weight:600;display:block}
+.six figcaption span{display:block;font-weight:400;font-size:14px;color:var(--nink2);margin-top:4px;white-space:normal}
+.six figure{width:max-content;min-width:0;max-width:none}
+.six figcaption{width:0;min-width:100%}
+
+.cmp>*,.doors>*,.ram>*,.vid>*,.gp>*,.ig>*,.three>*,.spread>*{min-width:0}
+/* close */
+.placeholder{border:1.5px dashed var(--ink3);background:var(--paper2);padding:32px;font-weight:500;font-size:16px;color:var(--ink3);max-width:64ch;line-height:1.5}
+footer{border-top:1px solid var(--rule);padding:40px 0 56px;font-size:13px;color:var(--ink3);line-height:1.6}
+footer p{max-width:70ch}
+
+/* motion */
+.js [data-reveal]{opacity:0;transform:translateY(10px);transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:calc(var(--i,0)*40ms)}
+.js [data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .js mark,.js .night mark{background-size:100% 100%}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="bar" id="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top" aria-label="Ali and Sumaya School, back to the top">
+      <svg viewBox="0 0 20 18" aria-hidden="true"><path fill="#FFD235" d="M10 17.5 8.6 16.2C3.6 11.7.3 8.7.3 5.1.3 2.2 2.6 0 5.4 0c1.7 0 3.3.8 4.6 2C11.3.8 12.9 0 14.6 0c2.8 0 5.1 2.2 5.1 5.1 0 3.6-3.3 6.6-8.3 11.1L10 17.5Z"/></svg>
+      <b>Ali and Sumaya School</b><i>Walkthrough</i>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#s1">01</a><a href="#s2">02</a><a href="#s3">03</a><a href="#s4">04</a><a href="#s5">05</a>
+    </nav>
+    <span class="curr" id="curr" aria-hidden="true"></span>
+  </div>
+</header>
+
+<main class="day" id="top">
+
+<!-- Hero -->
+<header class="hero" id="hero">
+  <div class="wrap">
+    <h1 data-reveal><span class="l1">Ali and Sumaya School</span><span class="l2">Visual walkthrough</span></h1>
+    <p class="lede" data-reveal>Ads, website, App Store page and Ramadan timing, from public pages only. Checked 28 November 2026.</p>
+    <ol class="toc" data-reveal>
+      <li><a href="#s1"><span class="tn">01</span><span class="tt">Assets you’re sitting on</span></a></li>
+      <li><a href="#s2"><span class="tn">02</span><span class="tt">Live ads</span></a></li>
+      <li><a href="#s3"><span class="tn">03</span><span class="tt">The leaking bucket</span></a></li>
+      <li><a href="#s4"><span class="tn">04</span><span class="tt">App Store images</span></a></li>
+      <li><a href="#s5"><span class="tn">05</span><span class="tt">Ramadan timing</span></a></li>
+    </ol>
+  </div>
+</header>
+
+<!-- 01 -->
+<section id="s1" data-name="Assets you’re sitting on" data-n="01">
+  <div class="wrap pad">
+    <div class="sec">
+      <aside class="margin">
+        <div class="m-info"><span class="m-num">01</span><span class="m-name">Assets you’re sitting on</span><span class="m-date">Checked 28 Nov 2026</span></div>
+        <div class="m-src"><span>Sources</span><ul>
+          <li><a href="https://www.youtube.com/@AliandSumaya" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.facebook.com/AliandSumaya" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://apps.apple.com/gb/app/ali-and-sumaya-school/id1440789301" target="_blank" rel="noopener">App Store</a></li>
+          <li><a href="https://aliandsumaya.com/school" target="_blank" rel="noopener">aliandsumaya.com/school</a></li>
+          <li><a href="https://www.instagram.com/aliandsumaya/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul></div>
+      </aside>
+      <div class="main">
+        <h2 data-reveal><span class="l1">113K followers across YouTube, Facebook and Instagram.</span><span class="l2">Scholar endorsed. Live every Sunday.</span></h2>
+
+        <div class="spread" data-reveal>
+          <div><div class="big">59.8K</div><p class="blabel">YouTube subscribers · 10.89M views · 297 videos</p></div>
+          <div><div class="big">49,939</div><p class="blabel">Facebook followers</p></div>
+          <div><div class="big">4.61</div><p class="blabel">App Store rating from 628 UK ratings (4.65 from 910 in the US)</p></div>
+          <div><div class="big">2012</div><p class="blabel">Teaching Islam since 2012 (their timeline). Imanimation Studios registered 2008.</p></div>
+        </div>
+
+        <div class="standing" data-reveal>
+          <h3>On aliandsumaya.com/school</h3>
+          <ul>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Al-Azhar Scholar Reviewed</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Endorsed by Shaykh Dr. Haitham Al-Haddad</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Dua from Shaykh Muhammad Jibreel</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Dr. Gemma Elizabeth, child pedagogy specialist</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Live class every Sunday, usually 3pm UK</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>100% ad-free and child-safe</li>
+            <li><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 5.4 3.8 8 9 2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Music-free (their ads: ‘music-free screen time’)</li>
+          </ul>
+        </div>
+
+        <div class="ig" data-reveal>
+          <figure class="fig">
+            <img src="assets/ig-profile.webp" width="900" height="872" loading="lazy" decoding="async" alt="The Ali and Sumaya Instagram profile page, logged out, showing follower count, bio link and the top six posts">
+            <span class="mk" style="left:32.5%;top:8.5%">1</span>
+            <span class="mk" style="left:75%;top:18.5%">2</span>
+            <span class="mk" style="left:8%;top:66%">3</span>
+            <figcaption class="cap">instagram.com/aliandsumaya, logged out, 28 Nov 2026</figcaption>
+          </figure>
+          <ol class="notes">
+            <li><b>1</b><span>3,328 followers, against 49,939 on Facebook and 59.8K on YouTube</span></li>
+            <li><b>2</b><span>Bio link: the Greek App Store page for Quran Quest, a different app</span></li>
+            <li><b>3</b><span>Top six posts are character reels. <mark>None show the School or the live class.</mark></span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="s2" data-name="Live ads" data-n="02">
+  <div class="wrap pad">
+    <div class="sec">
+      <aside class="margin">
+        <div class="m-info"><span class="m-num">02</span><span class="m-name">Live ads</span><span class="m-date">Checked 28 Nov 2026, 11:00</span></div>
+        <div class="m-src"><span>Sources</span><ul>
+          <li><a href="https://www.facebook.com/ads/library/?active_status=all&amp;ad_type=all&amp;country=ALL&amp;view_all_page_id=138400572964530&amp;search_type=page&amp;media_type=all" target="_blank" rel="noopener">Meta Ad Library</a></li>
+        </ul></div>
+      </aside>
+      <div class="main">
+        <h2 data-reveal><span class="l1">5 live ads, started 26 November.</span><span class="l2">All static. Same caption, same headline.</span></h2>
+
+        <div class="strip" data-reveal>
+          <figure><span class="mk corner">1</span><img src="assets/ad-live-1.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Live ad 1 of 5, a square static image"></figure>
+          <figure><span class="mk corner">2</span><img src="assets/ad-live-2.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Live ad 2 of 5, a square static image"></figure>
+          <figure><span class="mk corner">3</span><img src="assets/ad-live-3.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Live ad 3 of 5, a square static image"></figure>
+          <figure><span class="mk corner">4</span><img src="assets/ad-live-4.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Live ad 4 of 5, a square static image"></figure>
+          <figure><span class="mk corner">5</span><img src="assets/ad-live-5.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Live ad 5 of 5, a square static image"></figure>
+        </div>
+        <ol class="notes two adnotes" data-reveal>
+          <li><b>1</b><span>Same caption on all five: ‘Teaching your kids Salah, Qur’an, and Islamic manners shouldn’t cost a fortune or feel like a battle.’</span></li>
+          <li><b>2</b><span>Same headline on all five: ‘One Plan. Up to 5 Kids. Only £9.99/mo’</span></li>
+          <li><b>3</b><span>First ask on the image: <mark>Subscribe Now</mark></span></li>
+          <li><b>4</b><span>The same character render in all five</span></li>
+          <li><b>5</b><span>Meta flags this one ‘Low impression count’</span></li>
+        </ol>
+        <p class="facts" data-reveal>5 static images · 0 video · all link to aliandsumaya.com/school#pricing · the same five ran for 23 hours on 25 to 26 Nov, linking to app.aliandsumayaschool.com</p>
+
+        <div class="sub">
+          <h3 class="t" data-reveal>Before these: three parent-story video ads, stopped by 5 November</h3>
+          <div class="vid" data-reveal>
+            <div>
+              <div class="pw"><div class="phone v"><video muted playsinline loop preload="none" poster="assets/ad-ipad-dua.jpg" aria-label="Video ad: two children repeating the Dua for Parents"><source src="assets/ad-ipad-dua.mp4" type="video/mp4"></video></div></div>
+              <p class="pcap" style="max-width:280px">Video ad, 28 Oct to 4 Nov 2026 (8 days) · Plays without sound</p>
+            </div>
+            <div>
+              <blockquote>I walked into their room ready to take the iPad away, and froze at the door. Both kids had their hands raised, repeating the Dua for Parents out loud with the Ali &amp; Sumaya School app.</blockquote>
+              <ul class="plain">
+                <li>End card: ‘Sign up for your First Free Lessons’</li>
+                <li>Same week: a Salah video ad (‘No more iPad time! ...Or so I thought.’) and a live-class video ad (‘Quick, the live lesson is about to start!’)</li>
+                <li>Now: price-led statics asking ‘Subscribe Now’</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3" data-name="The leaking bucket" data-n="03">
+  <div class="wrap pad">
+    <div class="sec">
+      <aside class="margin">
+        <div class="m-info"><span class="m-num">03</span><span class="m-name">The leaking bucket</span><span class="m-date">Checked 28 Nov 2026</span></div>
+        <div class="m-src"><span>Sources</span><ul>
+          <li><a href="https://aliandsumaya.com/school" target="_blank" rel="noopener">aliandsumaya.com/school</a></li>
+          <li><a href="https://aliandsumaya.com/free" target="_blank" rel="noopener">aliandsumaya.com/free</a></li>
+          <li><a href="https://aliandsumaya.com/ramadan" target="_blank" rel="noopener">aliandsumaya.com/ramadan</a></li>
+          <li><a href="https://www.instagram.com/aliandsumaya/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@AliandSumaya" target="_blank" rel="noopener">YouTube</a></li>
+        </ul></div>
+      </aside>
+      <div class="main">
+        <h2 data-reveal><span class="l1">Where people land.</span><span class="l2">Three doors, three different places.</span></h2>
+
+        <div class="doors" data-reveal>
+          <div class="door a">
+            <h3>From the live ads</h3>
+            <p class="u">aliandsumaya.com/school#pricing</p>
+            <div class="pair">
+              <figure>
+                <div class="pw"><div class="phone"><img src="assets/m-school-hero.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Mobile view of the top of aliandsumaya.com/school"></div></div>
+                <figcaption class="pcap">Top of the page: ‘Try 3 Lessons Free’, no card needed</figcaption>
+              </figure>
+              <figure>
+                <div class="pw"><div class="phone"><img src="assets/m-school-pricing.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Mobile view of the pricing section of aliandsumaya.com/school"></div></div>
+                <figcaption class="pcap">Where the ads open it: <mark>the pricing section</mark></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="door b">
+            <h3>From the Instagram bio</h3>
+            <p class="u">apps.apple.com/gr/app/quran-quest</p>
+            <figure>
+              <div class="bf"><div class="u2">apps.apple.com/gr/app/quran-quest/id6740179566</div><img src="assets/greek-store.webp" width="1100" height="773" loading="lazy" decoding="async" alt="The Greek App Store page for Quran Quest"></div>
+              <figcaption class="cap">The Greek App Store page for Quran Quest, not School</figcaption>
+            </figure>
+          </div>
+          <div class="door c">
+            <h3>From YouTube: ‘FREE Weekly Lessons!’</h3>
+            <p class="u">aliandsumaya.com/free</p>
+            <figure>
+              <div class="pw"><div class="phone"><img src="assets/m-free-404.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Mobile view of aliandsumaya.com/free showing a page not found error"></div></div>
+              <figcaption class="pcap"><mark>404: This page could not be found</mark></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="sub">
+          <h3 class="t" data-reveal>Numbers that disagree</h3>
+          <div class="three" data-reveal>
+            <div><div class="big">762</div><p class="blabel">families · aliandsumaya.com/ramadan (‘Loved by +762 Families’)</p></div>
+            <div><div class="big">20,000+</div><p class="blabel">learners · aliandsumaya.com/school</p></div>
+            <div><div class="big">200,000</div><p class="blabel">children · App Store description (‘over 200 thousand children’)</p></div>
+          </div>
+        </div>
+
+        <div class="sub">
+          <h3 class="t" data-reveal>The Ramadan page</h3>
+          <div class="ram" data-reveal>
+            <div class="pw">
+              <div class="phone"><img src="assets/m-ramadan-762.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Mobile view of aliandsumaya.com/ramadan"></div>
+              <span class="mk" style="left:88%;top:14%">1</span>
+              <span class="mk" style="left:-4%;top:47%">2</span>
+            </div>
+            <ol class="notes">
+              <li><b>1</b><span>Top image doesn’t load (the file returns 404)</span></li>
+              <li><b>2</b><span>Pushes a free Surah Al-Fatiha app download, not School</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section id="s4" data-name="App Store images" data-n="04">
+  <div class="wrap pad">
+    <div class="sec">
+      <aside class="margin">
+        <div class="m-info"><span class="m-num">04</span><span class="m-name">App Store images</span><span class="m-date">Checked 28 Nov 2026 (screenshots captured 27 Nov)</span></div>
+        <div class="m-src"><span>Sources</span><ul>
+          <li><a href="https://apps.apple.com/gb/app/ali-and-sumaya-school/id1440789301" target="_blank" rel="noopener">App Store UK</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.ImanimationStudios.School&amp;hl=en_GB&amp;gl=GB" target="_blank" rel="noopener">Google Play</a></li>
+        </ul></div>
+      </aside>
+      <div class="main">
+        <h2 data-reveal><span class="l1">4.61 stars from 628 UK ratings.</span><span class="l2">Screenshot 1 is a guest account with 0 streaks.</span></h2>
+
+        <div class="gp" data-reveal>
+          <div class="pw"><div class="phone g"><img src="assets/ios-01.webp" width="506" height="900" loading="lazy" decoding="async" alt="App Store screenshot, slot 1: a guest account with 0 streaks"></div></div>
+          <ul>
+            <li>Slot 1 of 10, the first image parents see</li>
+            <li>‘Guest’, Streaks 0, empty progress bar</li>
+            <li>‘Special Offer - Subscribe to unlock all lessons’</li>
+          </ul>
+        </div>
+
+        <div class="sub">
+          <h3 class="t" data-reveal>Google Play</h3>
+          <div class="gp" data-reveal>
+            <div class="pw"><div class="phone g"><img src="assets/m-gplay.webp" width="780" height="1400" loading="lazy" decoding="async" alt="The Google Play listing for Ali and Sumaya School"></div></div>
+            <ul>
+              <li>3.4 stars from 379 reviews</li>
+              <li>50K+ downloads</li>
+              <li>First screenshot: the blurred video-call grid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Night -->
+<div class="night" id="night">
+
+<section id="s5" data-name="Ramadan timing" data-n="05">
+  <div class="wrap pad">
+    <div class="sec">
+      <aside class="margin">
+        <div class="m-info"><span class="m-num">05</span><span class="m-name">Ramadan timing</span><span class="m-date">Ramadan 2026 began Wed 18 Feb in the UK</span></div>
+        <div class="m-src"><span>Sources</span><ul>
+          <li><a href="https://www.facebook.com/ads/library/?active_status=all&amp;ad_type=all&amp;country=ALL&amp;view_all_page_id=138400572964530&amp;search_type=page&amp;media_type=all" target="_blank" rel="noopener">Meta Ad Library</a></li>
+        </ul></div>
+      </aside>
+      <div class="main">
+        <figure data-reveal>
+          <img class="open" src="assets/ramadan-art.webp" width="1392" height="752" loading="lazy" decoding="async" alt="Ali and Sumaya Ramadan artwork: a night sky with lanterns">
+          <figcaption class="cap">Their own Ramadan artwork, from aliandsumaya.com</figcaption>
+        </figure>
+
+        <h2 style="margin-top:56px" data-reveal><span class="l1">Ramadan 2026 began on 18 February.</span><span class="l2">Their first Ramadan ad went live on day 5.</span></h2>
+
+        <ol class="tl" aria-label="Ramadan 2026 timeline" data-reveal>
+          <li class="on">18 Feb · Ramadan day 1</li>
+          <li class="rng">22 Feb · ad starts (day 5)</li>
+          <li>26 Feb · ad stops</li>
+          <li>20 Mar · Eid</li>
+        </ol>
+        <p class="tlnote" data-reveal>One video ad in two versions, ‘Ramadan Mubarak - New Video Series 2026!’, for a free video series. <mark>No other ads ran until 27 October.</mark></p>
+
+        <div class="sub" data-reveal>
+          <div class="pw"><div class="phone v"><video muted playsinline loop preload="none" poster="assets/ad-ramadan-2026.jpg" aria-label="Their Ramadan 2026 video ad"><source src="assets/ad-ramadan-2026.mp4" type="video/mp4"></video></div></div>
+          <p class="pcap" style="max-width:280px">Their Ramadan 2026 ad (24s), from day 5 · Plays without sound</p>
+        </div>
+
+        <div class="n72" style="margin-top:88px" data-reveal>
+          <div class="big">72</div>
+          <p class="blabel" style="max-width:34ch">days from 28 November to Ramadan 2027 (expected around Monday 8 February, subject to the moon)</p>
+        </div>
+
+        <ol class="tl" style="margin-top:32px" aria-label="Ramadan 2027 timeline" data-reveal>
+          <li class="on">28 Nov · today</li>
+          <li>Dec</li>
+          <li>Jan</li>
+          <li>8 Feb · expected day 1</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<!-- Night ends -->
+
+
+</main>
+
+<footer>
+  <div class="wrap"><p>Visual walkthrough for Ali and Sumaya School. Public pages only, checked 28 November 2026; App Store screenshots captured 27 November. Videos play without sound.</p></div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar = document.getElementById('bar');
+  var night = document.getElementById('night');
+  var curr = document.getElementById('curr');
+  var navLinks = document.querySelectorAll('.nav a');
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section[id^="s"]'));
+  var stops = [document.getElementById('hero')].concat(secs);
+
+  // stagger index
+  document.querySelectorAll('.main, .hero .wrap').forEach(function(p){
+    var i = 0;
+    Array.prototype.forEach.call(p.children, function(c){
+      if (c.hasAttribute('data-reveal')) { c.style.setProperty('--i', Math.min(i, 6)); i++; }
+    });
+  });
+
+  // reveal
+  var els = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold: 0.15});
+    els.forEach(function(el){ io.observe(el); });
+    var sio = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('seen'); sio.unobserve(e.target); } });
+    }, {threshold: 0.15});
+    secs.forEach(function(s){ sio.observe(s); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+    secs.forEach(function(s){ s.classList.add('seen'); });
+  }
+
+  // videos: play only while at least 40% in view, always muted
+  var vids = document.querySelectorAll('video');
+  vids.forEach(function(v){ v.muted = true; v.defaultMuted = true; v.volume = 0; });
+  if ('IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var v = e.target;
+        if (e.isIntersecting && e.intersectionRatio >= 0.4) { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+        else v.pause();
+      });
+    }, {threshold: [0, 0.4]});
+    vids.forEach(function(v){ vio.observe(v); });
+  }
+
+  // bar state and current section
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var r = night.getBoundingClientRect();
+    bar.classList.toggle('is-night', r.top < 56 && r.bottom > 0);
+    var cur = -1;
+    for (var i = 0; i < secs.length; i++) {
+      if (secs[i].getBoundingClientRect().top <= 120) cur = i;
+    }
+    navLinks.forEach(function(a, i){ if (i === cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+    if (cur >= 0) { var s = secs[cur]; curr.innerHTML = '<b>' + s.getAttribute('data-n') + '</b> ' + s.getAttribute('data-name'); }
+    else curr.textContent = '';
+  }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(update); } }, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+
+  // keyboard
+  function go(el){ el.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'}); }
+  document.addEventListener('keydown', function(e){
+    if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+    var t = e.target, tag = t && t.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)) return;
+    if (/^[1-7]$/.test(e.key)) { e.preventDefault(); go(secs[+e.key - 1]); return; }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      if (t && t.classList && t.classList.contains('gal')) return;
+      var idx = 0;
+      for (var i = 0; i < stops.length; i++) { if (stops[i].getBoundingClientRect().top <= 120) idx = i; }
+      var next = e.key === 'ArrowRight' ? Math.min(idx + 1, stops.length - 1) : Math.max(idx - 1, 0);
+      e.preventDefault(); go(stops[next]);
+    }
+  });
+})();
+</script>
+<script>
+// First-party view beacon (fires only on visualtruthmedia.com; local previews are ignored)
+(function () {
+  if (location.hostname !== 'visualtruthmedia.com' && location.hostname !== 'www.visualtruthmedia.com') return;
+  var ENDPOINT = 'https://vtm-track.ishaaqmhr.workers.dev/e';
+  var SLUG = 'aliandsumaya-walkthrough';
+  var SID = Math.random().toString(36).slice(2, 12);
+  var t0 = Date.now();
+  function send(ev) {
+    var body = JSON.stringify({ slug: SLUG, sid: SID, event: ev, sec: Math.round((Date.now() - t0) / 1000), vidSec: 0 });
+    if (navigator.sendBeacon) { navigator.sendBeacon(ENDPOINT, new Blob([body], { type: 'text/plain' })); }
+    else { fetch(ENDPOINT, { method: 'POST', body: body, keepalive: true }).catch(function () {}); }
+  }
+  send('open');
+  document.addEventListener('visibilitychange', function () { send(document.hidden ? 'tab_hide' : 'tab_show'); });
+  window.addEventListener('pagehide', function () { send('leave'); });
+})();
+</script>
+</body>
+</html>
